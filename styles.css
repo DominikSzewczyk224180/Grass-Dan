@@ -141,9 +141,9 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
 .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); }
 .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); transform: translateY(-2px); }
 
-/* LOGO CARD on hero right side */
+/* LOGO CARD on hero right side — BIGGER */
 .hero-logo-card {
-  flex: 0 0 360px;
+  flex: 0 0 420px;
   animation: fadeInUp 0.8s ease 0.5s both;
 }
 .hero-logo-card-inner {
@@ -151,27 +151,15 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255,255,255,0.18);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 44px;
   text-align: center;
   box-shadow: 0 24px 60px rgba(0,0,0,0.25);
 }
 .hero-logo-card-inner img {
   width: 100%;
-  max-width: 260px;
-  margin: 0 auto 20px;
+  max-width: 380px;
+  margin: 0 auto;
   filter: brightness(1.1);
-}
-.hero-logo-card-text { color: var(--white); }
-.hlc-name {
-  display: block;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem; font-weight: 700;
-  letter-spacing: 1px; margin-bottom: 4px;
-}
-.hlc-sub {
-  display: block;
-  font-size: 0.85rem; opacity: 0.6;
-  line-height: 1.5;
 }
 
 /* Scroll hint */
@@ -275,8 +263,10 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
 }
 .why-us .section-label { color: var(--gold-light); }
 .why-us .section-title { color: var(--white); }
-.why-us .section-subtitle { color: rgba(255,255,255,0.6); }
-.why-us-header { text-align: center; margin-bottom: 60px; }
+.why-us .section-subtitle { color: rgba(255,255,255,0.6); margin: 0 auto; text-align: center; }
+.why-us-header { text-align: center; margin-bottom: 60px; display: flex; flex-direction: column; align-items: center; }
+.why-us-header .section-label { padding-left: 0; }
+.why-us-header .section-label::before { display: none; }
 .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 
 .feature {
@@ -387,7 +377,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero-logo-card { flex: 0 0 280px; }
+  .hero-logo-card { flex: 0 0 300px; }
 }
 
 @media (max-width: 768px) {
