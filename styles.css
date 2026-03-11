@@ -149,14 +149,13 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
 .hero-logo-card-inner {
   background: rgba(255,255,255,0.92);
   border-radius: var(--radius-lg);
-  padding: 48px 40px;
+  padding: 24px 20px;
   text-align: center;
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
   border: 3px solid rgba(255,255,255,0.4);
 }
 .hero-logo-card-inner img {
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
 }
 
