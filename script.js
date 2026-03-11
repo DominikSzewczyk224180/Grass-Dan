@@ -10,17 +10,27 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll);
   handleScroll();
 
+  /* --- Parallax banner effect --- */
+  const parallaxImg = document.querySelector('.parallax-img');
+  if (parallaxImg) {
+    const banner = document.querySelector('.parallax-banner');
+    window.addEventListener('scroll', () => {
+      const rect = banner.getBoundingClientRect();
+      if (rect.bottom > 0 && rect.top < window.innerHeight) {
+        const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+        parallaxImg.style.transform = `translateY(${-10 + progress * 20}%)`;
+      }
+    });
+  }
+
   /* --- Mobile menu toggle --- */
   const hamburger = document.querySelector('.nav-hamburger');
   const navLinks = document.querySelector('.nav-links');
-
   if (hamburger) {
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       hamburger.classList.toggle('active');
     });
-
-    // Close menu on link click
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -29,20 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* --- Smooth scroll for anchor links --- */
+  /* --- Smooth scroll --- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       const target = document.querySelector(anchor.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        const offset = 80;
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        const top = target.getBoundingClientRect().top + window.scrollY - 80;
         window.scrollTo({ top, behavior: 'smooth' });
       }
     });
   });
 
-  /* --- Scroll reveal animation --- */
+  /* --- Scroll reveal --- */
   const revealElements = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -51,18 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
-  });
-
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   revealElements.forEach(el => revealObserver.observe(el));
 
-  /* --- Staggered reveal for grids --- */
-  const staggerContainers = document.querySelectorAll('[data-stagger]');
-  staggerContainers.forEach(container => {
-    const children = container.querySelectorAll('.reveal');
-    children.forEach((child, i) => {
+  /* --- Staggered reveal --- */
+  document.querySelectorAll('[data-stagger]').forEach(container => {
+    container.querySelectorAll('.reveal').forEach((child, i) => {
       child.style.transitionDelay = `${i * 0.1}s`;
     });
   });
@@ -77,14 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const suffix = el.getAttribute('data-suffix') || '';
         const duration = 1800;
         const start = Date.now();
-
         const animate = () => {
           const elapsed = Date.now() - start;
           const progress = Math.min(elapsed / duration, 1);
-          // Ease out cubic
           const eased = 1 - Math.pow(1 - progress, 3);
-          const current = Math.round(eased * target);
-          el.textContent = current + suffix;
+          el.textContent = Math.round(eased * target) + suffix;
           if (progress < 1) requestAnimationFrame(animate);
         };
         animate();
@@ -92,24 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.5 });
-
   counters.forEach(c => counterObserver.observe(c));
-
-  /* --- Form handling (basic) --- */
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('.btn-submit');
-      const originalText = btn.textContent;
-      btn.textContent = 'Wysłano! ✓';
-      btn.style.background = 'var(--gold)';
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        form.reset();
-      }, 2500);
-    });
-  }
 
 });

@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grass-Dan | Usługi Ogrodnicze & Architektura Krajobrazu</title>
-  <meta name="description" content="Grass-Dan Daniel Grycman — profesjonalne usługi ogrodnicze i architektura krajobrazu. Projektowanie, zakładanie i pielęgnacja ogrodów.">
+  <meta name="description" content="Grass-Dan Daniel Grycman — profesjonalne usługi ogrodnicze i architektura krajobrazu. Projektowanie, zakładanie i pielęgnacja ogrodów. Rzuchów, Śląsk.">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img/logo-nobg.png">
 </head>
 <body>
 
@@ -20,7 +19,7 @@
   <nav class="navbar">
     <div class="container">
       <a href="#" class="nav-logo">
-        <img src="img/logo.png" alt="Grass-Dan Logo">
+        <img src="img/logo-nobg.png" alt="Grass-Dan Logo">
       </a>
       <div class="nav-links">
         <a href="#o-nas">O nas</a>
@@ -65,12 +64,26 @@
     </div>
   </section>
 
+  <!-- ==================== LOGO STRIP ==================== -->
+  <div class="logo-strip">
+    <div class="container">
+      <div class="logo-strip-inner">
+        <img src="img/logo-nobg.png" alt="Grass-Dan" class="logo-strip-img">
+        <div class="logo-strip-text">
+          <span>Usługi ogrodnicze & Architektura krajobrazu</span>
+          <span class="logo-strip-divider">|</span>
+          <span>Rzuchów, woj. śląskie</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ==================== O NAS ==================== -->
   <section class="about" id="o-nas">
     <div class="container">
       <div class="about-grid">
         <div class="about-image reveal">
-          <img src="img/hero.jpg" alt="Realizacja Grass-Dan">
+          <img src="img/gallery1.jpg" alt="Realizacja Grass-Dan — ogród przydomowy">
           <div class="experience-badge">
             <div class="num" data-count="9" data-suffix="+">0</div>
             <div class="label">Lat doświadczenia</div>
@@ -104,6 +117,19 @@
     </div>
   </section>
 
+  <!-- ==================== PARALLAX BANNER ==================== -->
+  <section class="parallax-banner">
+    <img src="img/gallery2.jpg" alt="Trawnik" class="parallax-img">
+    <div class="parallax-overlay"></div>
+    <div class="container">
+      <div class="parallax-content reveal">
+        <h2>Twój ogród zasługuje na&nbsp;najlepszych</h2>
+        <p>Skontaktuj się z nami i umów się na bezpłatną konsultację</p>
+        <a href="#kontakt" class="btn btn-primary">Umów się</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== USŁUGI ==================== -->
   <section class="services" id="uslugi">
     <div class="container">
@@ -114,55 +140,49 @@
       </div>
       <div class="services-grid" data-stagger>
 
-        <!-- 1 Koszenie -->
         <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="14" width="14" height="6" rx="2"/><circle cx="5" cy="20" r="2"/><circle cx="13" cy="20" r="2"/><path d="M8 14V8l4-4M6 10h8"/></svg>
+          <div class="service-icon-img">
+            <img src="img/icon-mowing.png" alt="Koszenie">
           </div>
           <h3>Koszenie i pielęgnacja trawników</h3>
           <p>Regularne koszenie, aeracja, wertykulacja i nawożenie — Twój trawnik będzie wyglądał idealnie przez cały sezon.</p>
         </div>
 
-        <!-- 2 Projektowanie -->
         <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <div class="service-icon-img">
+            <img src="img/icon-design.png" alt="Projektowanie">
           </div>
           <h3>Projektowanie ogrodów</h3>
           <p>Indywidualne projekty zieleni dopasowane do Twoich potrzeb, terenu i stylu życia. Wizualizacje 2D i 3D.</p>
         </div>
 
-        <!-- 3 Sadzenie -->
         <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22V12M12 12C12 12 8 8 8 5a4 4 0 0 1 8 0c0 3-4 7-4 7z"/><path d="M7 20h10"/></svg>
+          <div class="service-icon-img">
+            <img src="img/icon-planting.png" alt="Sadzenie">
           </div>
           <h3>Sadzenie roślin</h3>
           <p>Dobór i nasadzenia drzew, krzewów, bylin i traw ozdobnych. Tworzymy kompozycje, które kwitną cały rok.</p>
         </div>
 
-        <!-- 4 Nawierzchnie -->
         <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          <div class="service-icon-img">
+            <img src="img/icon-paving.png" alt="Nawierzchnie">
           </div>
           <h3>Nawierzchnie i ścieżki</h3>
           <p>Kostka brukowa, kamień naturalny, drewno — projektujemy i układamy estetyczne nawierzchnie ogrodowe.</p>
         </div>
 
-        <!-- 5 Narzędzia & Pielęgnacja -->
         <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <div class="service-icon-img">
+            <img src="img/icon-maintenance.png" alt="Pielęgnacja">
           </div>
           <h3>Pielęgnacja sezonowa</h3>
-          <p>Przycinanie, formowanie, ochrona roślin na zimę i wiosennie porządki. Dbamy o Twój ogród przez cały rok.</p>
+          <p>Przycinanie, formowanie, ochrona roślin na zimę i wiosenne porządki. Dbamy o Twój ogród przez cały rok.</p>
         </div>
 
-        <!-- 6 Drzewa & Krzewy -->
         <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22V13"/><path d="M8 22h8"/><path d="M12 13C12 13 5 8 5 5.5A3.5 3.5 0 0 1 12 4a3.5 3.5 0 0 1 7 1.5C19 8 12 13 12 13z"/><path d="M17 8c2 1 4 3 4 6-2 0-4-1-5-3"/><path d="M7 8c-2 1-4 3-4 6 2 0 4-1 5-3"/></svg>
+          <div class="service-icon-img">
+            <img src="img/icon-trees.png" alt="Drzewa">
           </div>
           <h3>Drzewa i krzewy ozdobne</h3>
           <p>Profesjonalna wycinka, przesadzanie i formowanie drzew oraz krzewów ozdobnych i owocowych.</p>
@@ -182,44 +202,29 @@
       </div>
       <div class="gallery-grid" data-stagger>
 
-        <div class="gallery-item reveal">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-            <span>Zdjęcie 1</span>
-          </div>
-          <div class="gallery-overlay"><span>Ogród przydomowy</span></div>
+        <div class="gallery-item tall reveal">
+          <img src="img/gallery1.jpg" alt="Realizacja - ogród z kostką brukową">
+          <div class="gallery-overlay"><span>Ogród z nawierzchnią</span></div>
         </div>
 
         <div class="gallery-item reveal">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-            <span>Zdjęcie 2</span>
-          </div>
+          <img src="img/hero.jpg" alt="Realizacja - ogród przydomowy z tarasem">
           <div class="gallery-overlay"><span>Taras z ogrodem</span></div>
         </div>
 
-        <div class="gallery-item tall reveal">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-            <span>Zdjęcie 3</span>
-          </div>
-          <div class="gallery-overlay"><span>Ścieżka ogrodowa</span></div>
+        <div class="gallery-item reveal">
+          <img src="img/gallery3.jpg" alt="Realizacja - ogród z fontanną">
+          <div class="gallery-overlay"><span>Ogród z fontanną</span></div>
         </div>
 
         <div class="gallery-item reveal">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-            <span>Zdjęcie 4</span>
-          </div>
-          <div class="gallery-overlay"><span>Projekt nasadzeń</span></div>
+          <img src="img/gallery2.jpg" alt="Realizacja - perfekcyjny trawnik">
+          <div class="gallery-overlay"><span>Trawnik idealny</span></div>
         </div>
 
         <div class="gallery-item reveal">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-            <span>Zdjęcie 5</span>
-          </div>
-          <div class="gallery-overlay"><span>Trawnik i rabaty</span></div>
+          <img src="img/gallery4.jpg" alt="Realizacja - ogród przydomowy">
+          <div class="gallery-overlay"><span>Ogród przydomowy</span></div>
         </div>
 
       </div>
@@ -314,21 +319,23 @@
 
         <div class="contact-form-wrap">
           <h3>Wyślij wiadomość</h3>
-          <div class="contact-form">
+          <!-- Formspree: zamień YOUR_FORM_ID na ID z formspree.io (darmowe) -->
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="form-group">
-              <label>Imię i nazwisko</label>
-              <input type="text" placeholder="Jan Kowalski">
+              <label for="name">Imię i nazwisko</label>
+              <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
             </div>
             <div class="form-group">
-              <label>Telefon lub email</label>
-              <input type="text" placeholder="+48 123 456 789">
+              <label for="contact">Telefon lub email</label>
+              <input type="text" id="contact" name="email" placeholder="+48 123 456 789" required>
             </div>
             <div class="form-group">
-              <label>Wiadomość</label>
-              <textarea placeholder="Opisz swój projekt lub zadaj pytanie..."></textarea>
+              <label for="message">Wiadomość</label>
+              <textarea id="message" name="message" placeholder="Opisz swój projekt lub zadaj pytanie..." required></textarea>
             </div>
-            <button class="btn-submit" onclick="handleSubmit(this)">Wyślij wiadomość</button>
-          </div>
+            <button type="submit" class="btn-submit">Wyślij wiadomość</button>
+          </form>
+          <p class="form-alt">Lub napisz bezpośrednio: <a href="mailto:kontakt@grassdan.pl?subject=Zapytanie%20ze%20strony%20Grass-Dan">kontakt@grassdan.pl</a></p>
         </div>
       </div>
     </div>
@@ -339,7 +346,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="img/logo.png" alt="Grass-Dan">
+          <img src="img/logo-nobg.png" alt="Grass-Dan">
           <p>Profesjonalne usługi ogrodnicze i architektura krajobrazu. Tworzymy piękne ogrody od 2016 roku.</p>
         </div>
 
@@ -372,6 +379,10 @@
             <span>ul. Krzyżkowicka 19A, 44-285 Rzuchów</span>
           </div>
           <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+48 XXX XXX XXX</span>
+          </div>
+          <div class="footer-contact-item">
             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span>kontakt@grassdan.pl</span>
           </div>
@@ -391,16 +402,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    function handleSubmit(btn) {
-      const originalText = btn.textContent;
-      btn.textContent = 'Wysłano! ✓';
-      btn.style.background = 'var(--gold)';
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-      }, 2500);
-    }
-  </script>
 </body>
 </html>
