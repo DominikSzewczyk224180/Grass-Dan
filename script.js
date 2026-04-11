@@ -1,4 +1,4 @@
-/* ===== GRASS-DAN — Scripts v3 ===== */
+/* ===== GRASS-DAN — Scripts v4 ===== */
 document.addEventListener('DOMContentLoaded', () => {
 
   /* Navbar scroll */
@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.nav-hamburger');
   const navLinks = document.querySelector('.nav-links');
   if (hamburger) {
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(a =>
       a.addEventListener('click', () => navLinks.classList.remove('open'))
     );
@@ -39,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   /* Stagger children */
@@ -56,12 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const el = entry.target;
         const target = parseInt(el.getAttribute('data-count'));
         const suffix = el.getAttribute('data-suffix') || '';
-        const start = Date.now();
-        const duration = 1800;
+        const start = Date.now(), duration = 1800;
         const animate = () => {
           const progress = Math.min((Date.now() - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          el.textContent = Math.round(eased * target) + suffix;
+          el.textContent = Math.round((1 - Math.pow(1 - progress, 3)) * target) + suffix;
           if (progress < 1) requestAnimationFrame(animate);
         };
         animate();
@@ -69,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.5 });
-
   document.querySelectorAll('[data-count]').forEach(c => counterObserver.observe(c));
 
 });
