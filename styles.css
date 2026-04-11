@@ -251,7 +251,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
 }
 .why-us .section-label { color: var(--gold-light); }
 .why-us .section-title { color: var(--white); }
-.why-us .section-subtitle { color: rgba(255,255,255,0.6); }
+.why-us .section-subtitle { color: rgba(255,255,255,0.6); margin: 0 auto; }
 .why-us-header { text-align: center; margin-bottom: 60px; }
 .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .feature {
