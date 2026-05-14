@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+  <defs>
+    <style>
+      .g-dark { fill: #1a3c28; }
+      .g-main { fill: #2d6a3f; }
+      .g-mid { fill: #3d8b53; }
+      .gold { fill: #b8943e; }
+      .text-bold { font-family: 'Arial Black', 'Helvetica', sans-serif; font-weight: 900; }
+      .text-thin { font-family: 'Arial', 'Helvetica', sans-serif; font-weight: 300; }
+    </style>
+  </defs>
+
+  <g transform="translate(350, 80)">
+    <!-- Left: grass blades -->
+    <g transform="translate(-110, 0)">
+      <path class="g-main" d="M -20,40 Q -25,0 -15,-30 Q -10,-5 -15,40 Z"/>
+      <path class="g-mid" d="M -5,40 Q -8,-10 5,-35 Q 10,0 5,40 Z"/>
+      <path class="g-main" d="M 18,40 Q 15,5 25,-25 Q 30,5 25,40 Z"/>
+    </g>
+
+    <!-- Center monogram -->
+    <circle cx="0" cy="0" r="48" fill="#1a3c28"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#b8943e" stroke-width="1.5"/>
+    <text x="0" y="14" text-anchor="middle" class="text-bold" font-size="40" fill="#ffffff" letter-spacing="-1">GD</text>
+
+    <!-- Right snowflake -->
+    <g transform="translate(110, 0) scale(0.95)" stroke="#4a90c4" stroke-width="2.5" stroke-linecap="round" fill="none">
+      <line x1="0" y1="-28" x2="0" y2="28"/>
+      <line x1="-28" y1="0" x2="28" y2="0"/>
+      <line x1="-20" y1="-20" x2="20" y2="20"/>
+      <line x1="-20" y1="20" x2="20" y2="-20"/>
+      <path d="M -4,-22 L 0,-18 L 4,-22 M -4,22 L 0,18 L 4,22"/>
+      <path d="M -22,-4 L -18,0 L -22,4 M 22,-4 L 18,0 L 22,4"/>
+    </g>
+  </g>
+
+  <text x="350" y="200" text-anchor="middle" class="g-main text-bold" font-size="58" letter-spacing="2">GRASS-DAN</text>
+  <text x="350" y="235" text-anchor="middle" class="gold text-thin" font-size="20" letter-spacing="5">DANIEL GRYCMAN</text>
+  <line x1="220" y1="258" x2="480" y2="258" stroke="#b8943e" stroke-width="1"/>
+  <text x="350" y="282" text-anchor="middle" class="g-dark text-thin" font-size="13" letter-spacing="3" opacity="0.65">USŁUGI TERENOWE · OD 2016</text>
+</svg>

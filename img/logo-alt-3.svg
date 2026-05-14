@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" width="700" height="280">
+  <defs>
+    <style>
+      .g-dark { fill: #1a3c28; }
+      .g-main { fill: #2d6a3f; }
+      .gold { fill: #b8943e; }
+      .gold-light { fill: #d4b85a; }
+      .white { fill: #ffffff; }
+      .text-bold { font-family: 'Arial Black', 'Helvetica', sans-serif; font-weight: 900; }
+      .text-thin { font-family: 'Arial', 'Helvetica', sans-serif; font-weight: 500; }
+    </style>
+  </defs>
+
+  <!-- Hexagonal shield -->
+  <g transform="translate(120, 140)">
+    <path d="M 0,-80 L 70,-40 L 70,40 L 0,80 L -70,40 L -70,-40 Z" fill="#2d6a3f" stroke="#1a3c28" stroke-width="3"/>
+    <path d="M 0,-68 L 60,-34 L 60,34 L 0,68 L -60,34 L -60,-34 Z" fill="none" stroke="#b8943e" stroke-width="1.5"/>
+    <text x="0" y="16" text-anchor="middle" class="white text-bold" font-size="68" letter-spacing="-2">GD</text>
+    <text x="0" y="50" text-anchor="middle" class="gold-light text-thin" font-size="11" letter-spacing="3">EST. 2016</text>
+  </g>
+
+  <!-- Text block -->
+  <rect x="240" y="95" width="50" height="3" class="gold"/>
+  <text x="240" y="135" class="g-dark text-bold" font-size="48" letter-spacing="1">GRASS-DAN</text>
+  <text x="240" y="162" class="g-main text-thin" font-size="14" letter-spacing="4">DANIEL GRYCMAN</text>
+
+  <!-- Service tags -->
+  <g transform="translate(240, 185)">
+    <rect x="0" y="0" width="78" height="24" rx="12" fill="#f4faf5" stroke="#2d6a3f" stroke-width="1"/>
+    <text x="39" y="16" text-anchor="middle" class="g-main text-thin" font-size="10" letter-spacing="1">ZIELEŃ</text>
+
+    <rect x="86" y="0" width="78" height="24" rx="12" fill="#f4faf5" stroke="#2d6a3f" stroke-width="1"/>
+    <text x="125" y="16" text-anchor="middle" class="g-main text-thin" font-size="10" letter-spacing="1">DRZEWA</text>
+
+    <rect x="172" y="0" width="78" height="24" rx="12" fill="#f4faf5" stroke="#2d6a3f" stroke-width="1"/>
+    <text x="211" y="16" text-anchor="middle" class="g-main text-thin" font-size="10" letter-spacing="1">ZIMA</text>
+
+    <rect x="258" y="0" width="78" height="24" rx="12" fill="#f4faf5" stroke="#2d6a3f" stroke-width="1"/>
+    <text x="297" y="16" text-anchor="middle" class="g-main text-thin" font-size="10" letter-spacing="1">DREWNO</text>
+  </g>
+
+  <!-- Bottom tag row -->
+  <g transform="translate(240, 219)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="#f4faf5" stroke="#2d6a3f" stroke-width="1"/>
+    <text x="60" y="16" text-anchor="middle" class="g-main text-thin" font-size="10" letter-spacing="1">KARCZOWANIE</text>
+  </g>
+</svg>
