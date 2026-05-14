@@ -1,43 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 240" width="700" height="240">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
   <defs>
     <style>
-      .g-dark { fill: #1a3c28; }
-      .g-main { fill: #2d6a3f; }
-      .gold { fill: #b8943e; }
-      .white { fill: #ffffff; }
-      .text-bold { font-family: 'Arial Black', 'Helvetica', sans-serif; font-weight: 900; }
-      .text-thin { font-family: 'Arial', 'Helvetica', sans-serif; font-weight: 400; }
+      .text-serif { font-family: 'Georgia', 'Times New Roman', serif; font-weight: 700; }
+      .text-sans { font-family: 'Helvetica', 'Arial', sans-serif; font-weight: 400; }
+      .text-italic { font-family: 'Georgia', serif; font-style: italic; font-weight: 400; }
     </style>
   </defs>
 
-  <!-- Circular badge on left -->
-  <g transform="translate(110, 120)">
-    <circle cx="0" cy="0" r="90" fill="#1a3c28"/>
-    <circle cx="0" cy="0" r="82" fill="none" stroke="#b8943e" stroke-width="1.5"/>
-
-    <!-- GD monogram -->
-    <text x="0" y="22" text-anchor="middle" class="white text-bold" font-size="80" letter-spacing="-3">GD</text>
-
-    <!-- Leaf accent left -->
-    <path d="M -70,-35 Q -82,-18 -68,0 Q -58,-15 -60,-30 Z" fill="#3d8b53"/>
-
-    <!-- Snowflake accent right -->
-    <g transform="translate(65, -38)" stroke="#b8943e" stroke-width="2" fill="none" stroke-linecap="round">
-      <line x1="0" y1="-10" x2="0" y2="10"/>
-      <line x1="-10" y1="0" x2="10" y2="0"/>
-      <line x1="-7" y1="-7" x2="7" y2="7"/>
-      <line x1="-7" y1="7" x2="7" y2="-7"/>
+  <!-- Left decorative element -->
+  <g transform="translate(140, 140)">
+    <!-- Wheat stem on left -->
+    <g stroke="#b8943e" stroke-width="2" stroke-linecap="round" fill="none">
+      <line x1="0" y1="60" x2="0" y2="-50"/>
+      <!-- Wheat grains -->
+      <ellipse cx="-7" cy="-40" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="7" cy="-40" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="-7" cy="-25" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="7" cy="-25" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="-7" cy="-10" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="7" cy="-10" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="0" cy="-50" rx="3" ry="6" fill="#b8943e" stroke="none"/>
     </g>
-
-    <!-- Bottom curve decoration -->
-    <path d="M -48,58 Q 0,78 48,58" stroke="#b8943e" stroke-width="1.5" fill="none"/>
   </g>
 
-  <!-- Right text block -->
-  <text x="230" y="105" class="g-dark text-bold" font-size="56" letter-spacing="1">GRASS-DAN</text>
-  <text x="230" y="140" class="gold text-thin" font-size="22" letter-spacing="4" font-style="italic">Daniel Grycman</text>
+  <!-- Mirror wheat right -->
+  <g transform="translate(660, 140)">
+    <g stroke="#b8943e" stroke-width="2" stroke-linecap="round" fill="none">
+      <line x1="0" y1="60" x2="0" y2="-50"/>
+      <ellipse cx="-7" cy="-40" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="7" cy="-40" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="-7" cy="-25" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="7" cy="-25" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="-7" cy="-10" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="7" cy="-10" rx="3.5" ry="7" fill="#b8943e" stroke="none"/>
+      <ellipse cx="0" cy="-50" rx="3" ry="6" fill="#b8943e" stroke="none"/>
+    </g>
+  </g>
 
-  <line x1="230" y1="160" x2="450" y2="160" stroke="#b8943e" stroke-width="1"/>
-  <text x="230" y="185" class="g-main text-thin" font-size="13" letter-spacing="3" opacity="0.7">PIELĘGNACJA · WYCINKA · ODŚNIEŻANIE</text>
-  <text x="230" y="205" class="g-main text-thin" font-size="13" letter-spacing="3" opacity="0.7">TRANSPORT DREWNA · KARCZOWANIE</text>
+  <!-- Top thin line -->
+  <line x1="200" y1="80" x2="600" y2="80" stroke="#1a3c28" stroke-width="0.8"/>
+  <line x1="200" y1="84" x2="600" y2="84" stroke="#b8943e" stroke-width="0.8"/>
+
+  <!-- Main brand name -->
+  <text x="400" y="158" text-anchor="middle" class="text-serif" font-size="64" fill="#1a3c28" letter-spacing="4">GRASS·DAN</text>
+
+  <!-- Subtitle italic -->
+  <text x="400" y="192" text-anchor="middle" class="text-italic" font-size="22" fill="#b8943e">Daniel Grycman</text>
+
+  <!-- Bottom small caps -->
+  <text x="400" y="222" text-anchor="middle" class="text-sans" font-size="11" fill="#4a4a4a" letter-spacing="6">USŁUGI · TERENOWE</text>
+
+  <!-- Bottom thin line -->
+  <line x1="320" y1="238" x2="480" y2="238" stroke="#b8943e" stroke-width="0.8"/>
 </svg>
