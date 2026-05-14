@@ -1,4 +1,4 @@
-/* ===== GRASS-DAN — Styles v4 (usługi terenowe) ===== */
+/* ===== GRASS-DAN, Styles v4 (usługi terenowe) ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -173,13 +173,13 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
 .stat .text { font-size: 0.8rem; color: var(--text-light); margin-top: 4px; }
 
 /* ===========================
-   SERVICES — 2x2 grid for 4 services
+   SERVICES, 2x2 grid for 4 services
    =========================== */
 .services { padding: 100px 0; background: var(--cream); }
 .services-header { text-align: center; margin-bottom: 60px; }
 .services-header .section-subtitle { margin: 0 auto; }
 
-/* SERVICES — Premium dark cards on cream bg */
+/* SERVICES, Premium dark cards on cream bg */
 .services-grid--5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -281,7 +281,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
 }
 
 /* ===========================
-   GALLERY — Before / After
+   GALLERY, Before / After
    =========================== */
 .gallery { padding: 100px 0; background: var(--white); }
 .gallery-header { text-align: center; margin-bottom: 60px; }
@@ -440,7 +440,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
 .feature p { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; }
 
 /* ===========================
-   CONTACT — clean tiles, no form
+   CONTACT, clean tiles, no form
    =========================== */
 .contact { padding: 100px 0; background: var(--cream); }
 
