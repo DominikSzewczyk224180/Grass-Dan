@@ -703,6 +703,7 @@ a.contact-tile.contact-tile--primary:hover {
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; }
 .footer-bottom-links { display: flex; gap: 20px; }
 .footer-bottom-links a:hover { color: var(--gold-light); }
+.footer-nip { color: rgba(255,255,255,0.4); font-family: 'DM Sans', monospace; }
 
 /* ===========================
    ANIMATIONS
