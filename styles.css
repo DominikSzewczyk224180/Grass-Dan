@@ -392,6 +392,64 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; line-
   text-align: center;
   margin-top: 60px;
 }
+
+/* Action gallery — extra photos */
+.action-gallery {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(26,60,40,0.1);
+  text-align: center;
+}
+.action-gallery-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+.action-gallery-sub {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+.action-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.action-photo {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.action-photo:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.action-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.action-photo:hover img { transform: scale(1.04); }
+
+.action-photo-caption {
+  position: absolute;
+  bottom: 12px; left: 12px;
+  background: rgba(26,60,40,0.85);
+  backdrop-filter: blur(4px);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
 .gallery-cta p {
   color: var(--text-light);
   margin-bottom: 16px;
@@ -696,6 +754,7 @@ a.contact-tile.contact-tile--primary:hover {
   .gallery-grid, .before-after-grid { grid-template-columns: 1fr; }
   .ba-pair { grid-template-columns: 1fr; }
   .ba-pair::after { transform: translate(-50%, -50%) rotate(90deg); }
+  .action-gallery-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
   .contact-details { grid-template-columns: 1fr; }
   .contact-card { padding: 48px 28px; }
