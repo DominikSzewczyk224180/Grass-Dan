@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://grass-dan.pl/</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://grass-dan.pl/img/hero.jpg</image:loc>
+      <image:title>Grass-Dan - karczowanie terenu, wycinka drzew, odśnieżanie</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://grass-dan.pl/img/realizacja-1-przed.jpg</image:loc>
+      <image:title>Karczowanie terenu - przed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://grass-dan.pl/img/realizacja-1-po.jpg</image:loc>
+      <image:title>Karczowanie terenu - po</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://grass-dan.pl/img/realizacja-2-przed.jpg</image:loc>
+      <image:title>Karczowanie pasa zarośli - przed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://grass-dan.pl/img/realizacja-2-po.jpg</image:loc>
+      <image:title>Karczowanie pasa zarośli - po</image:title>
+    </image:image>
+  </url>
+</urlset>

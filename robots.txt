@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /logo.html
+
+Sitemap: https://grass-dan.pl/sitemap.xml
